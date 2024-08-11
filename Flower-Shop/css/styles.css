@@ -1,0 +1,458 @@
+/*
+Home, About, Services - Navod Ravishan
+Login, Resgister - Tharindu
+Products, Contact - Vichaksha Viduranga
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Floral_Bkg_51_D_Monochrome.jpg");
+}
+
+header {
+    height: 50px;
+    background-color: #333;
+}
+
+header nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline 2px;
+    color: white;
+}
+
+.arrow-btn-left{
+    padding: 20px;
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    color: white;
+    background-color: black;
+}
+
+.arrow-btn-right{
+    padding: 20px;
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    color: white;
+    background-color: black;
+}
+
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 690px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section {
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+.about-section p {
+    text-align: justify;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.products-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.products-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    width: calc(20% - 20px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+.services-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.services-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(45% - 20px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+.contact-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+    color: #666;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.login-section {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.success-message, .error-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+}
+/* Register Section Styles */
+.register-section {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.register-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+    text-align: left;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+.success-message, .error-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#price{
+    color: #007700;
+    padding-bottom: 5px;
+}
